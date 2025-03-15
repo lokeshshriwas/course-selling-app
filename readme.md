@@ -49,10 +49,10 @@ This project is a course selling application built with Node.js, Express, and Mo
     npm install
     ```
 
-4.  **Create a `.env` file and add your MongoDB connection string:**
+4.  **Create a `.env.config` file and add your MongoDB connection string:**
 
     ```
-    MONGODB_URI=your_mongodb_connection_string
+    MONGO_URI=your_mongodb_connection_string
     ```
 
 5.  **Run the application:**
