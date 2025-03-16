@@ -4,10 +4,10 @@ import {authenticateAdmin} from "../middleware/auth.middleware.js";
 
 const adminRouter = Router();
 
-adminRouter.post("/signup", signup)
-adminRouter.post("/signin", signin)
+adminRouter.post("/signup", signup);
+adminRouter.post("/signin", signin);
 adminRouter.get('/bulk', authenticateAdmin, getAllCourses);
-adminRouter.post('/course',authenticateAdmin, createCourse)
-adminRouter.put('/course',authenticateAdmin, updateCourse)
+adminRouter.post('/course',authenticateAdmin, createCourse);
+adminRouter.put('/course',authenticateAdmin, updateCourse);
 
 export default adminRouter;

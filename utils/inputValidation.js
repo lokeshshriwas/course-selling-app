@@ -74,4 +74,20 @@ export const updateCourseValidation = z.object({
     .min(1, "Document ID is required"),
 });
 
+export const coursePurchaseValidation = z.object({
+  courseId: z
+    .string()
+    .min(1, "Course ID is required"),
+  userId: z
+    .string()
+    .min(1, "UserId ID is required"),
+});
+
+export const myPurchasedCoursesValidation = z.object({
+  userId: z
+    .string()
+    .min(1, "UserId ID is required"),
+});
+
+
 
